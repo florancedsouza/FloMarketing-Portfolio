@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FloMarketing contactme form">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+
+<body class="contactpagecolour">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="Home.html">FloMarketing</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="nav-about"><a href="Home.html">Home</a></li>
+            <li id="nav-resume"><a href="Resume.html">Resume</a></li>
+            <li id="nav-portfolio"><a href="Portfolio.html">Portfolio</a></li>
+            <li id="nav-contact"><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row cover contact">
+      <h1 class="text-center">Contact Me</h1>
+    </div>
+
+        <div class="wrapper">
+          <form action="submit">
+            <fieldset class="fullName">
+              
+              <input onKeyDown=trackName() id="firstName" name="firstName"type="text" required>
+              <label for="firstName" >
+                <span id="firstNameLabel" class="contentName">First Name</span>
+              </label>
+              
+              <input onKeyDown=trackLastName() id="lastName" name="lastName" type="text" required>
+              <label for="lastName">
+                <span id="lastNameLabel" class="contentName">Last Name</span>
+              </label>
+            </fieldset>
+            <fieldset>
+               
+              <input onKeyDown=trackEmail() id="email" name="email" type="email" required>
+              <label for="email">
+                <span id="emailLabel" class="contentName">Email Address</span>
+              </label>
+              <input onKeyDown=trackCompName() id="compName" name="compNmae" type="text" required>
+              <label for="compName">
+                <span id="compNameLabel" class="contentName">Company Name</span>
+              </label>
+            </fieldset>
+            <label class="visuallyhidden" for="message"></label>
+            <input name="message" placeholder="Message" type="text" required>
+            <button class="button" onclick="myFunction()">Submit</button>
+          </form>
+          </div>
+
+
+          <div id="contact" class="row cover bottom">
+            <h2 class="text-center contact-header contact-social-icons">You can also find me on: <br /><br />
+                    <a href="https://codepen.io/FloMarketing" target="_blank"> <i class="fa fa-codepen"></i> CodePen</a> &nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/florence-dsouza/" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                  </h2>
+          </div>
+
+    </body>
+  </html>    
